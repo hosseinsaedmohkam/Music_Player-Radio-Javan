@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Javan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.1/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+    <link id="favicon" rel="icon" type="image/png" href="img/1.png">
+    <link rel="stylesheet" href="style/output.css">
+    <link rel="stylesheet" href="style/master.css">
+    <link rel="stylesheet" href="style/master-1.js">
+   
+</head>
+
+<body class="bg-neutral-900 text-white h-screen overflow-hidden font-sans">
+    <div class="overlay hidden fixed inset-0 bg-black/70 z-40"></div>
+    <!--//// Mobile Toggle Button////////// -->
+    <button id="mobile-toggle" class="lg:hidden fixed top-4 left-4 p-3 bg-black rounded-full z-50">
+        <i class="bi bi-list text-white text-xl"></i>
+    </button>
+
+    <!--//////// Sidebar Menu/////////////////-->
+    <div class="flex h-full">
+        <aside
+            class="sidebar fixed top-0 left-0 w-64 bg-black p-4 h-full transform -translate-x-full transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:flex flex-col lg:w-[315px] z-50">
+            <div class="logo mb-8 p-4 flex justify-between items-center">
+                <img src="img/svgexport-1.svg" alt="Logo" class="w-32 cursor-pointer">
+                <button class="mobile-close lg:hidden">
+                    <i class="bi bi-x-lg text-white"></i>
+                </button>
+            </div>
+            <ul class="nav-links space-y-2 flex-grow">
+                <a href="../src/index1.html">
+                    <li
+                        class="nav-link p-2 flex items-center hover:bg-neutral-800 rounded cursor-pointer transition-colors duration-200">
+                        <i class="bi bi-grid-3x3-gap-fill mr-2"></i> Home
+                    </li>
+                </a>
+                <li
+                    class="nav-link p-2 flex items-center hover:bg-neutral-800 rounded cursor-pointer transition-colors duration-200">
+                    <i class="bi bi-reception-4 mr-2"></i> Daily Mix
+                </li>
+                <a href="../src/index3.html">
+                    <li
+                        class="nav-link p-2 flex items-center hover:bg-neutral-800 rounded cursor-pointer transition-colors duration-200">
+                        <i class="bi bi-music-note-list mr-2"></i>Old Songs
+                    </li>
+                </a>
+                <li
+                    class="nav-link p-2 flex items-center hover:bg-neutral-800 rounded cursor-pointer transition-colors duration-200">
+                    <i class="bi bi-disc mr-2"></i> Albums
+                </li>
+                <li
+                    class="nav-link p-2 flex items-center hover:bg-neutral-800 rounded cursor-pointer transition-colors duration-200">
+                    <i class="bi bi-card-list mr-2"></i> Playlists
+                </li>
+                <a href="../src/index2.html">
+                    <li
+                        class="nav-link  p-2 flex items-center hover:bg-neutral-800 rounded cursor-pointer transition-colors duration-200">
+                        <i class="bi bi-broadcast mr-2 "></i>Radio Sam(Podcast)
+                    </li>
+                </a>
+                <li
+                    class="nav-link p-2 flex items-center hover:bg-neutral-800 rounded cursor-pointer transition-colors duration-200">
+                    <i class="bi bi-camera-reels mr-2"></i> Video
+                </li>
+                <li
+                    class="nav-link p-2 flex items-center hover:bg-neutral-800 rounded cursor-pointer transition-colors duration-200">
+                    <i class="bi bi-mic mr-2"></i> Artist
+                </li>
+                <div class="mt-12 flex pt-4 text-sm text-neutral-500 ">
+                    <a href="" class="block mx-2 hover:text-white transition-colors duration-200"><i
+                            class="bi bi-arrow-down-circle"></i></a>
+                    <a href="" class="block hover:text-white transition-colors duration-200">Download App</a>
+
+                </div>
+            </ul>
+
+        </aside>
+        <!-- ///////////////////////main-content///////////search-bar///////////// -->
+        <main class="main-content ml-0 lg:ml-[25px] w-full flex-grow overflow-y-auto px-4 pb-20">
+            <div class=" mt-16 lg:mt-6 ">
+                <div class=" menu bg-neutral-800 ">
+                    <div class=" search-bar -mb-2">
+                        <i class="bi bi-arrow-left relative left-0"></i>
+                        <i class="bi bi-arrow-right relative left-1"></i>
+
+                        <input type="text" placeholder=" Search for artists, songs, or podcasts... "
+                            class="mx-8 inp lg:w-1/3  p-3 rounded-full bg-neutral-800 text-white placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <a href="">
+                            <h2
+                                class="rounded-2xl flex justify-center -mt-10 items-center relative lg:left-220 bg-red-900 w-[160px] h-[40px] left-44">
+                                Try Rj Premium</h2>
+                        </a>
+                        <a href=""><img class="w-[30px] relative lg:left-265 -mt-8 bg-amber-50 left-4/5"
+                                src="img/download (7).svg" alt=""></a>
+                        <a href=""><img class="w-[30px] relative lg:left-280  -mt-8 rounded-4xl left-96 "
+                                src="img/s.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div
+                    class="cursor-pointer relative bg-red-900 h-48 top-20 rounded-2xl flex flex-col lg:flex-row items-center justify-between p-6 mb-8">
+                    <h2 class="text-xl font-bold absolute bottom-20 lg:left-120">GET Rj Premium Now</h2>
+                    <button
+                        class="bg-amber-50 text-black absolute bottom-10 lg:left-136 text-sm px-4 py-2 rounded-xl">Try
+                        Now</button>
+                    <img src="img/imgi_2_01.png" class="absolute right-40 bottom-18 w-32 lg:w-48 lg:left-16 lg:-mb-20"
+                        alt="">
+                </div>
+                <!-- //////////////////////////music-cards & Good Evening /////////////////////////////////////////////////////// -->
+                <h2 class="text-2xl relative top-18 font-bold mb-4">Good Evening</h2>
+                <div id="music-cards1"
+                    class="music-cards-container relative top-16 *:hover:opacity-85 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
+
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/Ashkaye Abi - Seper.jpg" alt="" class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">Ashkaye Abi</h3>
+                        <p class="text-sm text-neutral-400 truncate">Seper</p>
+                    </div>
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/ya chi-masih & arash.jpg" alt="" class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">Ya chi</h3>
+                        <p class="text-sm text-neutral-400 truncate"> Masih & Arash Ap</p>
+                    </div>
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/Do Del - Pakan.jpg" alt="Album Art" class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">Do Del</h3>
+                        <p class="text-sm text-neutral-400 truncate">Pakan</p>
+                    </div>
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/Eshghe Alaki (Ft Sohrab MJ & Heliyom) - Sijal & Sepehr Khalse.jpg" alt=""
+                            class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">Eshghe Alaki </h3>
+                        <p class="text-sm text-neutral-400 truncate">Sohrab MJ & Heliyom</p>
+                    </div>
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/Ghese Kootah - Kiyarash & Aaren.jpg" alt="" class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate"> Ghese Kootah</h3>
+                        <p class="text-sm text-neutral-400 truncate">Kiyarash & Aaren</p>
+                    </div>
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/Gharib E Ashena - Ehaam.jpg" alt="" class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">Gharib E Ashena</h3>
+                        <p class="text-sm text-neutral-400 truncate">Ehaam</p>
+                    </div>
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/Mahi - Naser Zeynali.jpg" alt="" class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">Mahi</h3>
+                        <p class="text-sm text-neutral-400 truncate">Naser Zeynali </p>
+                    </div>
+                    <div
+                        class="music-card p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/Mastam Baat - Erfan, Shahin Najafi, & Morvarid.jpg" alt=""
+                            class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">Mastam Baat</h3>
+                        <p class="text-sm text-neutral-400 truncate"> Erfan, Shahin Najafi, & Morvarid</p>
+                    </div>
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/Mowja - Lara & Azi.jpg" alt="" class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">Mowja</h3>
+                        <p class="text-sm text-neutral-400 truncate">Lara & Azi </p>
+                    </div>
+                    <div
+                        class="music-card  p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                        <img src="img/nade ghol.jpg" alt="" class="w-full h-auto rounded mb-3">
+                        <h3 class="text-lg font-semibold truncate">nade ghol</h3>
+                        <p class="text-sm text-neutral-400 truncate">Ali yasini</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /////////////////////////////music-cards & Best New Releases //////////////////////////////////////// -->
+            <h2 class="text-2xl font-bold relative mt-14 mb-2 top-16">Best New Releases</h2>
+            <div id="music-cards1"
+                class="music-cards-container relative top-16 *:hover:opacity-85 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-4">
+                <div
+                    class=" music-card p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                    <img src="img/Sokoot - Farzad Farzin.jpg" alt="" class="w-full h-auto rounded mb-3">
+                    <h3 class="text-lg font-semibold truncate"> Sokoot</h3>
+                    <p class="text-sm text-neutral-400"> Farzad Farzin</p>
+                </div>
+                <div
+                    class="music-card p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                    <img src="img/Bi Janbeh (Alfred Parx Remix) - Arash.jpg" alt="" class="w-full h-auto rounded mb-3">
+                    <h3 class="text-lg font-semibold truncate">Bi Janbeh </h3>
+                    <p class="text-sm text-neutral-400">(Alfred Parx Remix) - Arash</p>
+                </div>
+                <div
+                    class="music-card p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                    <img src="img/Estefa-Shahin Loo.jpg" alt="" class="w-full h-auto rounded mb-3">
+                    <h3 class="text-lg font-semibold truncate">Estefa</h3>
+                    <p class="text-sm text-neutral-400">Shahin Loo</p>
+                </div>
+                <div
+                    class="music-card p-4 rounded-lg shadow-lg hover:bg-neutral-700 transition-colors duration-200 cursor-pointer">
+                    <img src="img/Dooset Daram - Armin 2AFM.jpg" alt="" class="w-full h-auto rounded mb-3">
+                    <h3 class="text-lg font-semibold truncate">Dooset Daram </h3>
+                    <p class="text-sm text-neutral-400">Armin 2AFM</p>
+                </div>
+
+            </div>
+            <div class="w-full  lg:flex gap-3">
+                <a class="w-full  lg:flex gap-3" href="../src/index3.html">
+                    <div
+                        class="cursor-pointer hover:bg-neutral-800  relative bg-red-950 h-48 top-20 rounded-2xl flex flex-col lg:w-[100%] lg:flex-row items-center justify-between p-6 mb-8">
+                        <h2 class="text-3xl  lg:text-4xl  font-bold absolute bottom-20 lg:left-60"> Old Songs</h2>
+                        <img src="img/Dariush-Ebi-Noon-O-Panir-O-Sabzi.jpg"
+                            class=" absolute left-2 lg:right-40 lg:bottom-18 w-32 lg:w-40 lg:left-16 lg:-mb-14 rounded-2xl"
+                            alt="">
+                    </div>
+                </a>
+                <a class="w-full  lg:flex gap-3" href="../src/index2.html">
+                    <div
+                        class="cursor-pointer hover:bg-neutral-800 relative bg-red-950 h-48 top-20 rounded-2xl flex flex-col lg:w-[100%] lg:flex-row items-center justify-between p-6 mb-8">
+                        <h2 class="text-3xl right-2.5 lg:text-3xl  font-bold absolute bottom-20 lg:left-64">Radio
+                            Sam(Podcast)</h2>
+                        <img src="img/پارسا.jpg"
+                            class=" absolute left-2 lg:right-40 lg:bottom-18 w-32 lg:w-40 lg:left-16 lg:-mb-14 rounded-2xl"
+                            alt="">
+                    </div>
+                </a>
+            </div>
+            <!-- //////////////////////////footterrrr/////////////// -->
+            <div class="w-[50%] mt-32 flex ">
+                <ul class="w-[50%]">
+                    <li class="text-[18px] text-amber-50 ">More</li>
+                    <li class="li txt">Get App</li>
+                    <li class="li txt">Premium</li>
+                    <li class="li txt">Help & Support</li>
+                    <li class="li txt">Advertise</li>
+                    <li class="li txt">Contact</li>
+                </ul>
+                <ul class="w-[50%]">
+                    <li class="text-[18px] text-amber-50 ">Follow us on</li>
+                    <li class="li txt">Instagram</li>
+                    <li class="li txt">YouTube</li>
+                    <li class="li txt">Telegram</li>
+                    <li class="li txt">Twitter</li>
+                    <li class="li txt">TikTok</li>
+
+                </ul>
+            </div>
+
+            <div class="foot flex mt-36 ">
+                <ul class="flex ">
+                    <li class="flex ">
+                        <i class="bi bi-c-circle"></i>
+                        <p>2025 by</p>
+                        <a href="">
+                            <p class="mx-2">Radio Javan</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="flex *:mx-2">
+                        <a href="">
+                            <p>Privace policy</p>
+                        </a>
+                        <a href="">
+                            <p>Terms of Use</p>
+                        </a>
+                        <a href="">
+                            <p>About</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hossein">
+                    <figure>
+                        <img src="img/IMG_20240123_182522.jpg" alt="">
+                      
+                    </figure>
+                </div>
+    </footer>
+    </div>
+
+    </main>
+
+    <!-- ////////////////Player Controls///////////////////////////// -->
+    <footer
+        class="player-controls bg-neutral-800 fixed left-0 bottom-0 z-[100] w-full h-[90px] flex flex-row sm:flex-row justify-center lg:justify-between items-center p-4">
+        <div class="current-song-info xs:mb-0 lg:flex justify-start items-center gap-2 w-[100px] flex-1">
+            <img id="album-cover" class="album-cover w-12 h-12 rounded-md mr-3" src="img/default-cover.jpg" alt="">
+            <div>
+                <p id="current-song-title" class="text-sm font-semibold truncate">No song playing</p>
+                <p id="current-artist" class="text-xs text-neutral-400 truncate">N/A</p>
+            </div>
+        </div>
+
+        <div class="audio-player flex flex-col items-center justify-center w-[50%] sm:w-auto px-0 sm:px-4">
+            <div class="controls flex items-center space-x-3 sm:space-x-6 mb-2">
+                <button id="play-prev-btn"
+                    class="text-lg sm:text-xl text-neutral-300 hover:text-white transition-colors duration-200">
+                    <i class="bi bi-skip-start-fill"></i>
+                </button>
+                <button id="play-pause-btn" class="text-4xl sm:text-5xl text-gray-500  transition-colors duration-200">
+                    <i class="bi bi-play-fill"></i>
+                </button>
+                <button id="play-next-btn"
+                    class="text-lg sm:text-xl text-neutral-300 hover:text-white transition-colors duration-200">
+                    <i class="bi bi-skip-end-fill"></i>
+                </button>
+            </div>
+            <div class="progress-bar-container flex items-center w-[220px] sm:w-[280px] lg:w-[500px]">
+                <span id="current-time" class="text-xs text-neutral-400 mr-2">0:00</span>
+                <input id="progress-bar" type="range" min="0" max="100" value="0"
+                    class="flex-grow h-1 accent-gray-500 ">
+                <span id="duration" class="text-xs text-neutral-400 ml-2">0:00</span>
+            </div>
+            <!-- Volume control for mobile -->
+            <!-- <div class="player-volume mt-2 sm:mt-0 sm:w-[50px] items-center space-x-2">
+                    <i class="bi bi-volume-up-fill text-lg sm:text-xl"></i>
+                    <input id="volume-slider-mobile" type="range" min="0" max="100" value="75"
+                        class="w-[100px] h-1 accent-green-500">
+                </div> -->
+        </div>
+
+        <div class="volume-controls mt-3 sm:mt-0  sm:flex sm:flex-row items-center gap-2.5 flex-1 justify-end">
+            <div class="hidden -mx-40 mt-10 lg:flex lg:items-center lg:justify-end gap-2.5">
+                <i class="bi bi-volume-up-fill text-xl text-white"></i>
+                <input id="volume-slider" type="range" min="0" max="100" value="75"
+                    class="w-[150px] h-1 accent-gray-500">
+            </div>
+            <div class="extra-controls flex-nowrap justify-items-end lg:flex lg:mb-10 space-x-4 cursor-pointer">
+                <img class="w-5 h-5" src="img/download (8).svg" alt="">
+                <img class="w-5 h-5" src="img/download (9).svg" alt="">
+                <img class="w-5 h-5" src="img/download (10).svg" alt="">
+                <img class="mx-4 lg:w-5 lg:h-5" src="img/download (12).svg" alt="">
+            </div>
+             
+        </div>
+    
+    </div>
+
+</body>
+<script src="style/master-1.js"></script>
+</html>
